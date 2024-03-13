@@ -1,0 +1,1128 @@
+{
+    "url": "http://localhost:3000/iiif/presentation",
+    "searchUrl": "http://localhost:3000/iiif/services",
+    "collectionName": "hk",
+    "name": "G_339",
+    "query": "?q=G3390114.sch_0000",
+    "iiifImagesURL": "http://localhost:8080/iiif/images",
+    "manifestPath": "G_339",
+    "collection": "hk",
+    "isLast": false,
+    "path": "G_339",
+    "metadata": "  \"metadata\": [\n    {\n      \"label\": \"Author\",\n      \"value\": \"Please define manifestsMetadata in your config JSON!\"\n    }\n  ],\n  \"navDate\": \"2019-01-01T00:00:00Z\",",
+    "thumbnailWidth": 300,
+    "thumbnailHeight": 500,
+    "annotations": [
+        {
+            "url": "http://localhost:3000/iiif/presentation",
+            "searchUrl": "http://localhost:3000/iiif/services",
+            "collectionName": "hk",
+            "name": "G_339",
+            "query": "?q=G3390114.sch_0000",
+            "iiifImagesURL": "http://localhost:8080/iiif/images",
+            "manifestPath": "G_339",
+            "collection": "hk",
+            "isLast": false,
+            "path": "G3390114.sch_00008_00009_a",
+            "imageName": "G3390114.sch_00008_00009_a",
+            "imagePath": "G_339/G3390114.sch/G3390114.sch_00008_00009_a.tif",
+            "image": {
+                "url": "http://localhost:3000/iiif/presentation",
+                "searchUrl": "http://localhost:3000/iiif/services",
+                "collectionName": "hk",
+                "name": "G_339",
+                "query": "?q=G3390114.sch_0000",
+                "iiifImagesURL": "http://localhost:8080/iiif/images",
+                "manifestPath": "G_339",
+                "collection": "hk",
+                "isLast": false
+            },
+            "width": 1500,
+            "height": 2500,
+            "thumbnailWidth": 300,
+            "thumbnailHeight": 500,
+            "annotationLists": [
+                {
+                    "annotations": [
+                        {
+                            "label": "Filename:",
+                            "html": "G3390114.sch_00008_00009_a",
+                            "isLast": true
+                        }
+                    ],
+                    "isLast": true
+                }
+            ]
+        },
+        {
+            "url": "http://localhost:3000/iiif/presentation",
+            "searchUrl": "http://localhost:3000/iiif/services",
+            "collectionName": "hk",
+            "name": "G_339",
+            "query": "?q=G3390114.sch_0000",
+            "iiifImagesURL": "http://localhost:8080/iiif/images",
+            "manifestPath": "G_339",
+            "collection": "hk",
+            "isLast": false,
+            "path": "G3390114.sch_00009_00010_a",
+            "imageName": "G3390114.sch_00009_00010_a",
+            "imagePath": "G_339/G3390114.sch/G3390114.sch_00009_00010_a.tif",
+            "image": {
+                "url": "http://localhost:3000/iiif/presentation",
+                "searchUrl": "http://localhost:3000/iiif/services",
+                "collectionName": "hk",
+                "name": "G_339",
+                "query": "?q=G3390114.sch_0000",
+                "iiifImagesURL": "http://localhost:8080/iiif/images",
+                "manifestPath": "G_339",
+                "collection": "hk",
+                "isLast": false
+            },
+            "width": 1500,
+            "height": 2500,
+            "thumbnailWidth": 300,
+            "thumbnailHeight": 500,
+            "annotationLists": [
+                {
+                    "annotations": [
+                        {
+                            "label": "Filename:",
+                            "html": "G3390114.sch_00009_00010_a",
+                            "isLast": true
+                        }
+                    ],
+                    "isLast": true
+                }
+            ]
+        },
+        {
+            "url": "http://localhost:3000/iiif/presentation",
+            "searchUrl": "http://localhost:3000/iiif/services",
+            "collectionName": "hk",
+            "name": "G_339",
+            "query": "?q=G3390114.sch_0000",
+            "iiifImagesURL": "http://localhost:8080/iiif/images",
+            "manifestPath": "G_339",
+            "collection": "hk",
+            "isLast": false,
+            "path": "G3390114.sch_00010_00011_a",
+            "imageName": "G3390114.sch_00010_00011_a",
+            "imagePath": "G_339/G3390114.sch/G3390114.sch_00010_00011_a.tif",
+            "image": {
+                "url": "http://localhost:3000/iiif/presentation",
+                "searchUrl": "http://localhost:3000/iiif/services",
+                "collectionName": "hk",
+                "name": "G_339",
+                "query": "?q=G3390114.sch_0000",
+                "iiifImagesURL": "http://localhost:8080/iiif/images",
+                "manifestPath": "G_339",
+                "collection": "hk",
+                "isLast": false
+            },
+            "width": 1500,
+            "height": 2500,
+            "thumbnailWidth": 300,
+            "thumbnailHeight": 500,
+            "annotationLists": [
+                {
+                    "annotations": [
+                        {
+                            "label": "Filename:",
+                            "html": "G3390114.sch_00010_00011_a",
+                            "isLast": true
+                        }
+                    ],
+                    "isLast": true
+                }
+            ]
+        },
+        {
+            "url": "http://localhost:3000/iiif/presentation",
+            "searchUrl": "http://localhost:3000/iiif/services",
+            "collectionName": "hk",
+            "name": "G_339",
+            "query": "?q=G3390114.sch_0000",
+            "iiifImagesURL": "http://localhost:8080/iiif/images",
+            "manifestPath": "G_339",
+            "collection": "hk",
+            "isLast": false,
+            "path": "G3390114.sch_00011_00012_a",
+            "imageName": "G3390114.sch_00011_00012_a",
+            "imagePath": "G_339/G3390114.sch/G3390114.sch_00011_00012_a.tif",
+            "image": {
+                "url": "http://localhost:3000/iiif/presentation",
+                "searchUrl": "http://localhost:3000/iiif/services",
+                "collectionName": "hk",
+                "name": "G_339",
+                "query": "?q=G3390114.sch_0000",
+                "iiifImagesURL": "http://localhost:8080/iiif/images",
+                "manifestPath": "G_339",
+                "collection": "hk",
+                "isLast": false
+            },
+            "width": 1500,
+            "height": 2500,
+            "thumbnailWidth": 300,
+            "thumbnailHeight": 500,
+            "annotationLists": [
+                {
+                    "annotations": [
+                        {
+                            "label": "Filename:",
+                            "html": "G3390114.sch_00011_00012_a",
+                            "isLast": true
+                        }
+                    ],
+                    "isLast": true
+                }
+            ]
+        },
+        {
+            "url": "http://localhost:3000/iiif/presentation",
+            "searchUrl": "http://localhost:3000/iiif/services",
+            "collectionName": "hk",
+            "name": "G_339",
+            "query": "?q=G3390114.sch_0000",
+            "iiifImagesURL": "http://localhost:8080/iiif/images",
+            "manifestPath": "G_339",
+            "collection": "hk",
+            "isLast": false,
+            "path": "G3390114.sch_00012_00013_a",
+            "imageName": "G3390114.sch_00012_00013_a",
+            "imagePath": "G_339/G3390114.sch/G3390114.sch_00012_00013_a.tif",
+            "image": {
+                "url": "http://localhost:3000/iiif/presentation",
+                "searchUrl": "http://localhost:3000/iiif/services",
+                "collectionName": "hk",
+                "name": "G_339",
+                "query": "?q=G3390114.sch_0000",
+                "iiifImagesURL": "http://localhost:8080/iiif/images",
+                "manifestPath": "G_339",
+                "collection": "hk",
+                "isLast": false
+            },
+            "width": 1500,
+            "height": 2500,
+            "thumbnailWidth": 300,
+            "thumbnailHeight": 500,
+            "annotationLists": [
+                {
+                    "annotations": [
+                        {
+                            "label": "Filename:",
+                            "html": "G3390114.sch_00012_00013_a",
+                            "isLast": true
+                        }
+                    ],
+                    "isLast": true
+                }
+            ]
+        },
+        {
+            "url": "http://localhost:3000/iiif/presentation",
+            "searchUrl": "http://localhost:3000/iiif/services",
+            "collectionName": "hk",
+            "name": "G_339",
+            "query": "?q=G3390114.sch_0000",
+            "iiifImagesURL": "http://localhost:8080/iiif/images",
+            "manifestPath": "G_339",
+            "collection": "hk",
+            "isLast": false,
+            "path": "G3390114.sch_00013_00014_a",
+            "imageName": "G3390114.sch_00013_00014_a",
+            "imagePath": "G_339/G3390114.sch/G3390114.sch_00013_00014_a.tif",
+            "image": {
+                "url": "http://localhost:3000/iiif/presentation",
+                "searchUrl": "http://localhost:3000/iiif/services",
+                "collectionName": "hk",
+                "name": "G_339",
+                "query": "?q=G3390114.sch_0000",
+                "iiifImagesURL": "http://localhost:8080/iiif/images",
+                "manifestPath": "G_339",
+                "collection": "hk",
+                "isLast": false
+            },
+            "width": 1500,
+            "height": 2500,
+            "thumbnailWidth": 300,
+            "thumbnailHeight": 500,
+            "annotationLists": [
+                {
+                    "annotations": [
+                        {
+                            "label": "Filename:",
+                            "html": "G3390114.sch_00013_00014_a",
+                            "isLast": true
+                        }
+                    ],
+                    "isLast": true
+                }
+            ]
+        },
+        {
+            "url": "http://localhost:3000/iiif/presentation",
+            "searchUrl": "http://localhost:3000/iiif/services",
+            "collectionName": "hk",
+            "name": "G_339",
+            "query": "?q=G3390114.sch_0000",
+            "iiifImagesURL": "http://localhost:8080/iiif/images",
+            "manifestPath": "G_339",
+            "collection": "hk",
+            "isLast": false,
+            "path": "G3390114.sch_00014_00015_a",
+            "imageName": "G3390114.sch_00014_00015_a",
+            "imagePath": "G_339/G3390114.sch/G3390114.sch_00014_00015_a.tif",
+            "image": {
+                "url": "http://localhost:3000/iiif/presentation",
+                "searchUrl": "http://localhost:3000/iiif/services",
+                "collectionName": "hk",
+                "name": "G_339",
+                "query": "?q=G3390114.sch_0000",
+                "iiifImagesURL": "http://localhost:8080/iiif/images",
+                "manifestPath": "G_339",
+                "collection": "hk",
+                "isLast": false
+            },
+            "width": 1500,
+            "height": 2500,
+            "thumbnailWidth": 300,
+            "thumbnailHeight": 500,
+            "annotationLists": [
+                {
+                    "annotations": [
+                        {
+                            "label": "Filename:",
+                            "html": "G3390114.sch_00014_00015_a",
+                            "isLast": true
+                        }
+                    ],
+                    "isLast": true
+                }
+            ]
+        },
+        {
+            "url": "http://localhost:3000/iiif/presentation",
+            "searchUrl": "http://localhost:3000/iiif/services",
+            "collectionName": "hk",
+            "name": "G_339",
+            "query": "?q=G3390114.sch_0000",
+            "iiifImagesURL": "http://localhost:8080/iiif/images",
+            "manifestPath": "G_339",
+            "collection": "hk",
+            "isLast": false,
+            "path": "G3390114.sch_00015_00016_a",
+            "imageName": "G3390114.sch_00015_00016_a",
+            "imagePath": "G_339/G3390114.sch/G3390114.sch_00015_00016_a.tif",
+            "image": {
+                "url": "http://localhost:3000/iiif/presentation",
+                "searchUrl": "http://localhost:3000/iiif/services",
+                "collectionName": "hk",
+                "name": "G_339",
+                "query": "?q=G3390114.sch_0000",
+                "iiifImagesURL": "http://localhost:8080/iiif/images",
+                "manifestPath": "G_339",
+                "collection": "hk",
+                "isLast": false
+            },
+            "width": 1500,
+            "height": 2500,
+            "thumbnailWidth": 300,
+            "thumbnailHeight": 500,
+            "annotationLists": [
+                {
+                    "annotations": [
+                        {
+                            "label": "Filename:",
+                            "html": "G3390114.sch_00015_00016_a",
+                            "isLast": true
+                        }
+                    ],
+                    "isLast": true
+                }
+            ]
+        },
+        {
+            "url": "http://localhost:3000/iiif/presentation",
+            "searchUrl": "http://localhost:3000/iiif/services",
+            "collectionName": "hk",
+            "name": "G_339",
+            "query": "?q=G3390114.sch_0000",
+            "iiifImagesURL": "http://localhost:8080/iiif/images",
+            "manifestPath": "G_339",
+            "collection": "hk",
+            "isLast": false,
+            "path": "G3390114.sch_00016_00017_a",
+            "imageName": "G3390114.sch_00016_00017_a",
+            "imagePath": "G_339/G3390114.sch/G3390114.sch_00016_00017_a.tif",
+            "image": {
+                "url": "http://localhost:3000/iiif/presentation",
+                "searchUrl": "http://localhost:3000/iiif/services",
+                "collectionName": "hk",
+                "name": "G_339",
+                "query": "?q=G3390114.sch_0000",
+                "iiifImagesURL": "http://localhost:8080/iiif/images",
+                "manifestPath": "G_339",
+                "collection": "hk",
+                "isLast": false
+            },
+            "width": 1500,
+            "height": 2500,
+            "thumbnailWidth": 300,
+            "thumbnailHeight": 500,
+            "annotationLists": [
+                {
+                    "annotations": [
+                        {
+                            "label": "Filename:",
+                            "html": "G3390114.sch_00016_00017_a",
+                            "isLast": true
+                        }
+                    ],
+                    "isLast": true
+                }
+            ]
+        },
+        {
+            "url": "http://localhost:3000/iiif/presentation",
+            "searchUrl": "http://localhost:3000/iiif/services",
+            "collectionName": "hk",
+            "name": "G_339",
+            "query": "?q=G3390114.sch_0000",
+            "iiifImagesURL": "http://localhost:8080/iiif/images",
+            "manifestPath": "G_339",
+            "collection": "hk",
+            "isLast": false,
+            "path": "G3390114.sch_00017_00018_a",
+            "imageName": "G3390114.sch_00017_00018_a",
+            "imagePath": "G_339/G3390114.sch/G3390114.sch_00017_00018_a.tif",
+            "image": {
+                "url": "http://localhost:3000/iiif/presentation",
+                "searchUrl": "http://localhost:3000/iiif/services",
+                "collectionName": "hk",
+                "name": "G_339",
+                "query": "?q=G3390114.sch_0000",
+                "iiifImagesURL": "http://localhost:8080/iiif/images",
+                "manifestPath": "G_339",
+                "collection": "hk",
+                "isLast": false
+            },
+            "width": 1500,
+            "height": 2500,
+            "thumbnailWidth": 300,
+            "thumbnailHeight": 500,
+            "annotationLists": [
+                {
+                    "annotations": [
+                        {
+                            "label": "Filename:",
+                            "html": "G3390114.sch_00017_00018_a",
+                            "isLast": true
+                        }
+                    ],
+                    "isLast": true
+                }
+            ]
+        },
+        {
+            "url": "http://localhost:3000/iiif/presentation",
+            "searchUrl": "http://localhost:3000/iiif/services",
+            "collectionName": "hk",
+            "name": "G_339",
+            "query": "?q=G3390114.sch_0000",
+            "iiifImagesURL": "http://localhost:8080/iiif/images",
+            "manifestPath": "G_339",
+            "collection": "hk",
+            "isLast": false,
+            "path": "G3390114.sch_00018_00019_a",
+            "imageName": "G3390114.sch_00018_00019_a",
+            "imagePath": "G_339/G3390114.sch/G3390114.sch_00018_00019_a.tif",
+            "image": {
+                "url": "http://localhost:3000/iiif/presentation",
+                "searchUrl": "http://localhost:3000/iiif/services",
+                "collectionName": "hk",
+                "name": "G_339",
+                "query": "?q=G3390114.sch_0000",
+                "iiifImagesURL": "http://localhost:8080/iiif/images",
+                "manifestPath": "G_339",
+                "collection": "hk",
+                "isLast": false
+            },
+            "width": 1500,
+            "height": 2500,
+            "thumbnailWidth": 300,
+            "thumbnailHeight": 500,
+            "annotationLists": [
+                {
+                    "annotations": [
+                        {
+                            "label": "Filename:",
+                            "html": "G3390114.sch_00018_00019_a",
+                            "isLast": true
+                        }
+                    ],
+                    "isLast": true
+                }
+            ]
+        },
+        {
+            "url": "http://localhost:3000/iiif/presentation",
+            "searchUrl": "http://localhost:3000/iiif/services",
+            "collectionName": "hk",
+            "name": "G_339",
+            "query": "?q=G3390114.sch_0000",
+            "iiifImagesURL": "http://localhost:8080/iiif/images",
+            "manifestPath": "G_339",
+            "collection": "hk",
+            "isLast": false,
+            "path": "G3390114.sch_00019_00020_a",
+            "imageName": "G3390114.sch_00019_00020_a",
+            "imagePath": "G_339/G3390114.sch/G3390114.sch_00019_00020_a.tif",
+            "image": {
+                "url": "http://localhost:3000/iiif/presentation",
+                "searchUrl": "http://localhost:3000/iiif/services",
+                "collectionName": "hk",
+                "name": "G_339",
+                "query": "?q=G3390114.sch_0000",
+                "iiifImagesURL": "http://localhost:8080/iiif/images",
+                "manifestPath": "G_339",
+                "collection": "hk",
+                "isLast": false
+            },
+            "width": 1500,
+            "height": 2500,
+            "thumbnailWidth": 300,
+            "thumbnailHeight": 500,
+            "annotationLists": [
+                {
+                    "annotations": [
+                        {
+                            "label": "Filename:",
+                            "html": "G3390114.sch_00019_00020_a",
+                            "isLast": true
+                        }
+                    ],
+                    "isLast": true
+                }
+            ]
+        },
+        {
+            "url": "http://localhost:3000/iiif/presentation",
+            "searchUrl": "http://localhost:3000/iiif/services",
+            "collectionName": "hk",
+            "name": "G_339",
+            "query": "?q=G3390114.sch_0000",
+            "iiifImagesURL": "http://localhost:8080/iiif/images",
+            "manifestPath": "G_339",
+            "collection": "hk",
+            "isLast": false,
+            "path": "G3390114.sch_00020_00021_a",
+            "imageName": "G3390114.sch_00020_00021_a",
+            "imagePath": "G_339/G3390114.sch/G3390114.sch_00020_00021_a.tif",
+            "image": {
+                "url": "http://localhost:3000/iiif/presentation",
+                "searchUrl": "http://localhost:3000/iiif/services",
+                "collectionName": "hk",
+                "name": "G_339",
+                "query": "?q=G3390114.sch_0000",
+                "iiifImagesURL": "http://localhost:8080/iiif/images",
+                "manifestPath": "G_339",
+                "collection": "hk",
+                "isLast": false
+            },
+            "width": 1500,
+            "height": 2500,
+            "thumbnailWidth": 300,
+            "thumbnailHeight": 500,
+            "annotationLists": [
+                {
+                    "annotations": [
+                        {
+                            "label": "Filename:",
+                            "html": "G3390114.sch_00020_00021_a",
+                            "isLast": true
+                        }
+                    ],
+                    "isLast": true
+                }
+            ]
+        },
+        {
+            "url": "http://localhost:3000/iiif/presentation",
+            "searchUrl": "http://localhost:3000/iiif/services",
+            "collectionName": "hk",
+            "name": "G_339",
+            "query": "?q=G3390114.sch_0000",
+            "iiifImagesURL": "http://localhost:8080/iiif/images",
+            "manifestPath": "G_339",
+            "collection": "hk",
+            "isLast": false,
+            "path": "G3390114.sch_00021_00022_a",
+            "imageName": "G3390114.sch_00021_00022_a",
+            "imagePath": "G_339/G3390114.sch/G3390114.sch_00021_00022_a.tif",
+            "image": {
+                "url": "http://localhost:3000/iiif/presentation",
+                "searchUrl": "http://localhost:3000/iiif/services",
+                "collectionName": "hk",
+                "name": "G_339",
+                "query": "?q=G3390114.sch_0000",
+                "iiifImagesURL": "http://localhost:8080/iiif/images",
+                "manifestPath": "G_339",
+                "collection": "hk",
+                "isLast": false
+            },
+            "width": 1500,
+            "height": 2500,
+            "thumbnailWidth": 300,
+            "thumbnailHeight": 500,
+            "annotationLists": [
+                {
+                    "annotations": [
+                        {
+                            "label": "Filename:",
+                            "html": "G3390114.sch_00021_00022_a",
+                            "isLast": true
+                        }
+                    ],
+                    "isLast": true
+                }
+            ]
+        },
+        {
+            "url": "http://localhost:3000/iiif/presentation",
+            "searchUrl": "http://localhost:3000/iiif/services",
+            "collectionName": "hk",
+            "name": "G_339",
+            "query": "?q=G3390114.sch_0000",
+            "iiifImagesURL": "http://localhost:8080/iiif/images",
+            "manifestPath": "G_339",
+            "collection": "hk",
+            "isLast": false,
+            "path": "G3390114.sch_00022_00023_a",
+            "imageName": "G3390114.sch_00022_00023_a",
+            "imagePath": "G_339/G3390114.sch/G3390114.sch_00022_00023_a.tif",
+            "image": {
+                "url": "http://localhost:3000/iiif/presentation",
+                "searchUrl": "http://localhost:3000/iiif/services",
+                "collectionName": "hk",
+                "name": "G_339",
+                "query": "?q=G3390114.sch_0000",
+                "iiifImagesURL": "http://localhost:8080/iiif/images",
+                "manifestPath": "G_339",
+                "collection": "hk",
+                "isLast": false
+            },
+            "width": 1500,
+            "height": 2500,
+            "thumbnailWidth": 300,
+            "thumbnailHeight": 500,
+            "annotationLists": [
+                {
+                    "annotations": [
+                        {
+                            "label": "Filename:",
+                            "html": "G3390114.sch_00022_00023_a",
+                            "isLast": true
+                        }
+                    ],
+                    "isLast": true
+                }
+            ]
+        },
+        {
+            "url": "http://localhost:3000/iiif/presentation",
+            "searchUrl": "http://localhost:3000/iiif/services",
+            "collectionName": "hk",
+            "name": "G_339",
+            "query": "?q=G3390114.sch_0000",
+            "iiifImagesURL": "http://localhost:8080/iiif/images",
+            "manifestPath": "G_339",
+            "collection": "hk",
+            "isLast": false,
+            "path": "G3390114.sch_00023_00024_a",
+            "imageName": "G3390114.sch_00023_00024_a",
+            "imagePath": "G_339/G3390114.sch/G3390114.sch_00023_00024_a.tif",
+            "image": {
+                "url": "http://localhost:3000/iiif/presentation",
+                "searchUrl": "http://localhost:3000/iiif/services",
+                "collectionName": "hk",
+                "name": "G_339",
+                "query": "?q=G3390114.sch_0000",
+                "iiifImagesURL": "http://localhost:8080/iiif/images",
+                "manifestPath": "G_339",
+                "collection": "hk",
+                "isLast": false
+            },
+            "width": 1500,
+            "height": 2500,
+            "thumbnailWidth": 300,
+            "thumbnailHeight": 500,
+            "annotationLists": [
+                {
+                    "annotations": [
+                        {
+                            "label": "Filename:",
+                            "html": "G3390114.sch_00023_00024_a",
+                            "isLast": true
+                        }
+                    ],
+                    "isLast": true
+                }
+            ]
+        },
+        {
+            "url": "http://localhost:3000/iiif/presentation",
+            "searchUrl": "http://localhost:3000/iiif/services",
+            "collectionName": "hk",
+            "name": "G_339",
+            "query": "?q=G3390114.sch_0000",
+            "iiifImagesURL": "http://localhost:8080/iiif/images",
+            "manifestPath": "G_339",
+            "collection": "hk",
+            "isLast": false,
+            "path": "G3390114.sch_00024_00025_a",
+            "imageName": "G3390114.sch_00024_00025_a",
+            "imagePath": "G_339/G3390114.sch/G3390114.sch_00024_00025_a.tif",
+            "image": {
+                "url": "http://localhost:3000/iiif/presentation",
+                "searchUrl": "http://localhost:3000/iiif/services",
+                "collectionName": "hk",
+                "name": "G_339",
+                "query": "?q=G3390114.sch_0000",
+                "iiifImagesURL": "http://localhost:8080/iiif/images",
+                "manifestPath": "G_339",
+                "collection": "hk",
+                "isLast": false
+            },
+            "width": 1500,
+            "height": 2500,
+            "thumbnailWidth": 300,
+            "thumbnailHeight": 500,
+            "annotationLists": [
+                {
+                    "annotations": [
+                        {
+                            "label": "Filename:",
+                            "html": "G3390114.sch_00024_00025_a",
+                            "isLast": true
+                        }
+                    ],
+                    "isLast": true
+                }
+            ]
+        },
+        {
+            "url": "http://localhost:3000/iiif/presentation",
+            "searchUrl": "http://localhost:3000/iiif/services",
+            "collectionName": "hk",
+            "name": "G_339",
+            "query": "?q=G3390114.sch_0000",
+            "iiifImagesURL": "http://localhost:8080/iiif/images",
+            "manifestPath": "G_339",
+            "collection": "hk",
+            "isLast": false,
+            "path": "G3390114.sch_00025_00026_a",
+            "imageName": "G3390114.sch_00025_00026_a",
+            "imagePath": "G_339/G3390114.sch/G3390114.sch_00025_00026_a.tif",
+            "image": {
+                "url": "http://localhost:3000/iiif/presentation",
+                "searchUrl": "http://localhost:3000/iiif/services",
+                "collectionName": "hk",
+                "name": "G_339",
+                "query": "?q=G3390114.sch_0000",
+                "iiifImagesURL": "http://localhost:8080/iiif/images",
+                "manifestPath": "G_339",
+                "collection": "hk",
+                "isLast": false
+            },
+            "width": 1500,
+            "height": 2500,
+            "thumbnailWidth": 300,
+            "thumbnailHeight": 500,
+            "annotationLists": [
+                {
+                    "annotations": [
+                        {
+                            "label": "Filename:",
+                            "html": "G3390114.sch_00025_00026_a",
+                            "isLast": true
+                        }
+                    ],
+                    "isLast": true
+                }
+            ]
+        },
+        {
+            "url": "http://localhost:3000/iiif/presentation",
+            "searchUrl": "http://localhost:3000/iiif/services",
+            "collectionName": "hk",
+            "name": "G_339",
+            "query": "?q=G3390114.sch_0000",
+            "iiifImagesURL": "http://localhost:8080/iiif/images",
+            "manifestPath": "G_339",
+            "collection": "hk",
+            "isLast": false,
+            "path": "G3390114.sch_00026_00027_a",
+            "imageName": "G3390114.sch_00026_00027_a",
+            "imagePath": "G_339/G3390114.sch/G3390114.sch_00026_00027_a.tif",
+            "image": {
+                "url": "http://localhost:3000/iiif/presentation",
+                "searchUrl": "http://localhost:3000/iiif/services",
+                "collectionName": "hk",
+                "name": "G_339",
+                "query": "?q=G3390114.sch_0000",
+                "iiifImagesURL": "http://localhost:8080/iiif/images",
+                "manifestPath": "G_339",
+                "collection": "hk",
+                "isLast": false
+            },
+            "width": 1500,
+            "height": 2500,
+            "thumbnailWidth": 300,
+            "thumbnailHeight": 500,
+            "annotationLists": [
+                {
+                    "annotations": [
+                        {
+                            "label": "Filename:",
+                            "html": "G3390114.sch_00026_00027_a",
+                            "isLast": true
+                        }
+                    ],
+                    "isLast": true
+                }
+            ]
+        },
+        {
+            "url": "http://localhost:3000/iiif/presentation",
+            "searchUrl": "http://localhost:3000/iiif/services",
+            "collectionName": "hk",
+            "name": "G_339",
+            "query": "?q=G3390114.sch_0000",
+            "iiifImagesURL": "http://localhost:8080/iiif/images",
+            "manifestPath": "G_339",
+            "collection": "hk",
+            "isLast": false,
+            "path": "G3390114.sch_00027_00028_a",
+            "imageName": "G3390114.sch_00027_00028_a",
+            "imagePath": "G_339/G3390114.sch/G3390114.sch_00027_00028_a.tif",
+            "image": {
+                "url": "http://localhost:3000/iiif/presentation",
+                "searchUrl": "http://localhost:3000/iiif/services",
+                "collectionName": "hk",
+                "name": "G_339",
+                "query": "?q=G3390114.sch_0000",
+                "iiifImagesURL": "http://localhost:8080/iiif/images",
+                "manifestPath": "G_339",
+                "collection": "hk",
+                "isLast": false
+            },
+            "width": 1500,
+            "height": 2500,
+            "thumbnailWidth": 300,
+            "thumbnailHeight": 500,
+            "annotationLists": [
+                {
+                    "annotations": [
+                        {
+                            "label": "Filename:",
+                            "html": "G3390114.sch_00027_00028_a",
+                            "isLast": true
+                        }
+                    ],
+                    "isLast": true
+                }
+            ]
+        },
+        {
+            "url": "http://localhost:3000/iiif/presentation",
+            "searchUrl": "http://localhost:3000/iiif/services",
+            "collectionName": "hk",
+            "name": "G_339",
+            "query": "?q=G3390114.sch_0000",
+            "iiifImagesURL": "http://localhost:8080/iiif/images",
+            "manifestPath": "G_339",
+            "collection": "hk",
+            "isLast": false,
+            "path": "G3390114.sch_00028_00029_a",
+            "imageName": "G3390114.sch_00028_00029_a",
+            "imagePath": "G_339/G3390114.sch/G3390114.sch_00028_00029_a.tif",
+            "image": {
+                "url": "http://localhost:3000/iiif/presentation",
+                "searchUrl": "http://localhost:3000/iiif/services",
+                "collectionName": "hk",
+                "name": "G_339",
+                "query": "?q=G3390114.sch_0000",
+                "iiifImagesURL": "http://localhost:8080/iiif/images",
+                "manifestPath": "G_339",
+                "collection": "hk",
+                "isLast": false
+            },
+            "width": 1500,
+            "height": 2500,
+            "thumbnailWidth": 300,
+            "thumbnailHeight": 500,
+            "annotationLists": [
+                {
+                    "annotations": [
+                        {
+                            "label": "Filename:",
+                            "html": "G3390114.sch_00028_00029_a",
+                            "isLast": true
+                        }
+                    ],
+                    "isLast": true
+                }
+            ]
+        },
+        {
+            "url": "http://localhost:3000/iiif/presentation",
+            "searchUrl": "http://localhost:3000/iiif/services",
+            "collectionName": "hk",
+            "name": "G_339",
+            "query": "?q=G3390114.sch_0000",
+            "iiifImagesURL": "http://localhost:8080/iiif/images",
+            "manifestPath": "G_339",
+            "collection": "hk",
+            "isLast": false,
+            "path": "G3390114.sch_00029_00030_a",
+            "imageName": "G3390114.sch_00029_00030_a",
+            "imagePath": "G_339/G3390114.sch/G3390114.sch_00029_00030_a.tif",
+            "image": {
+                "url": "http://localhost:3000/iiif/presentation",
+                "searchUrl": "http://localhost:3000/iiif/services",
+                "collectionName": "hk",
+                "name": "G_339",
+                "query": "?q=G3390114.sch_0000",
+                "iiifImagesURL": "http://localhost:8080/iiif/images",
+                "manifestPath": "G_339",
+                "collection": "hk",
+                "isLast": false
+            },
+            "width": 1500,
+            "height": 2500,
+            "thumbnailWidth": 300,
+            "thumbnailHeight": 500,
+            "annotationLists": [
+                {
+                    "annotations": [
+                        {
+                            "label": "Filename:",
+                            "html": "G3390114.sch_00029_00030_a",
+                            "isLast": true
+                        }
+                    ],
+                    "isLast": true
+                }
+            ]
+        },
+        {
+            "url": "http://localhost:3000/iiif/presentation",
+            "searchUrl": "http://localhost:3000/iiif/services",
+            "collectionName": "hk",
+            "name": "G_339",
+            "query": "?q=G3390114.sch_0000",
+            "iiifImagesURL": "http://localhost:8080/iiif/images",
+            "manifestPath": "G_339",
+            "collection": "hk",
+            "isLast": false,
+            "path": "G3390114.sch_00030_00031_a",
+            "imageName": "G3390114.sch_00030_00031_a",
+            "imagePath": "G_339/G3390114.sch/G3390114.sch_00030_00031_a.tif",
+            "image": {
+                "url": "http://localhost:3000/iiif/presentation",
+                "searchUrl": "http://localhost:3000/iiif/services",
+                "collectionName": "hk",
+                "name": "G_339",
+                "query": "?q=G3390114.sch_0000",
+                "iiifImagesURL": "http://localhost:8080/iiif/images",
+                "manifestPath": "G_339",
+                "collection": "hk",
+                "isLast": false
+            },
+            "width": 1500,
+            "height": 2500,
+            "thumbnailWidth": 300,
+            "thumbnailHeight": 500,
+            "annotationLists": [
+                {
+                    "annotations": [
+                        {
+                            "label": "Filename:",
+                            "html": "G3390114.sch_00030_00031_a",
+                            "isLast": true
+                        }
+                    ],
+                    "isLast": true
+                }
+            ]
+        },
+        {
+            "url": "http://localhost:3000/iiif/presentation",
+            "searchUrl": "http://localhost:3000/iiif/services",
+            "collectionName": "hk",
+            "name": "G_339",
+            "query": "?q=G3390114.sch_0000",
+            "iiifImagesURL": "http://localhost:8080/iiif/images",
+            "manifestPath": "G_339",
+            "collection": "hk",
+            "isLast": false,
+            "path": "G3390114.sch_00031_00032_a",
+            "imageName": "G3390114.sch_00031_00032_a",
+            "imagePath": "G_339/G3390114.sch/G3390114.sch_00031_00032_a.tif",
+            "image": {
+                "url": "http://localhost:3000/iiif/presentation",
+                "searchUrl": "http://localhost:3000/iiif/services",
+                "collectionName": "hk",
+                "name": "G_339",
+                "query": "?q=G3390114.sch_0000",
+                "iiifImagesURL": "http://localhost:8080/iiif/images",
+                "manifestPath": "G_339",
+                "collection": "hk",
+                "isLast": false
+            },
+            "width": 1500,
+            "height": 2500,
+            "thumbnailWidth": 300,
+            "thumbnailHeight": 500,
+            "annotationLists": [
+                {
+                    "annotations": [
+                        {
+                            "label": "Filename:",
+                            "html": "G3390114.sch_00031_00032_a",
+                            "isLast": true
+                        }
+                    ],
+                    "isLast": true
+                }
+            ]
+        },
+        {
+            "url": "http://localhost:3000/iiif/presentation",
+            "searchUrl": "http://localhost:3000/iiif/services",
+            "collectionName": "hk",
+            "name": "G_339",
+            "query": "?q=G3390114.sch_0000",
+            "iiifImagesURL": "http://localhost:8080/iiif/images",
+            "manifestPath": "G_339",
+            "collection": "hk",
+            "isLast": false,
+            "path": "G3390114.sch_00032_00033_a",
+            "imageName": "G3390114.sch_00032_00033_a",
+            "imagePath": "G_339/G3390114.sch/G3390114.sch_00032_00033_a.tif",
+            "image": {
+                "url": "http://localhost:3000/iiif/presentation",
+                "searchUrl": "http://localhost:3000/iiif/services",
+                "collectionName": "hk",
+                "name": "G_339",
+                "query": "?q=G3390114.sch_0000",
+                "iiifImagesURL": "http://localhost:8080/iiif/images",
+                "manifestPath": "G_339",
+                "collection": "hk",
+                "isLast": false
+            },
+            "width": 1500,
+            "height": 2500,
+            "thumbnailWidth": 300,
+            "thumbnailHeight": 500,
+            "annotationLists": [
+                {
+                    "annotations": [
+                        {
+                            "label": "Filename:",
+                            "html": "G3390114.sch_00032_00033_a",
+                            "isLast": true
+                        }
+                    ],
+                    "isLast": true
+                }
+            ]
+        },
+        {
+            "url": "http://localhost:3000/iiif/presentation",
+            "searchUrl": "http://localhost:3000/iiif/services",
+            "collectionName": "hk",
+            "name": "G_339",
+            "query": "?q=G3390114.sch_0000",
+            "iiifImagesURL": "http://localhost:8080/iiif/images",
+            "manifestPath": "G_339",
+            "collection": "hk",
+            "isLast": false,
+            "path": "G3390114.sch_00033_00033_b",
+            "imageName": "G3390114.sch_00033_00033_b",
+            "imagePath": "G_339/G3390114.sch/G3390114.sch_00033_00033_b.tif",
+            "image": {
+                "url": "http://localhost:3000/iiif/presentation",
+                "searchUrl": "http://localhost:3000/iiif/services",
+                "collectionName": "hk",
+                "name": "G_339",
+                "query": "?q=G3390114.sch_0000",
+                "iiifImagesURL": "http://localhost:8080/iiif/images",
+                "manifestPath": "G_339",
+                "collection": "hk",
+                "isLast": false
+            },
+            "width": 1500,
+            "height": 2500,
+            "thumbnailWidth": 300,
+            "thumbnailHeight": 500,
+            "annotationLists": [
+                {
+                    "annotations": [
+                        {
+                            "label": "Filename:",
+                            "html": "G3390114.sch_00033_00033_b",
+                            "isLast": true
+                        }
+                    ],
+                    "isLast": true
+                }
+            ]
+        },
+        {
+            "url": "http://localhost:3000/iiif/presentation",
+            "searchUrl": "http://localhost:3000/iiif/services",
+            "collectionName": "hk",
+            "name": "G_339",
+            "query": "?q=G3390114.sch_0000",
+            "iiifImagesURL": "http://localhost:8080/iiif/images",
+            "manifestPath": "G_339",
+            "collection": "hk",
+            "isLast": true,
+            "path": "G3390114.sch_00035_00036_a",
+            "imageName": "G3390114.sch_00035_00036_a",
+            "imagePath": "G_339/G3390114.sch/G3390114.sch_00035_00036_a.tif",
+            "image": {
+                "url": "http://localhost:3000/iiif/presentation",
+                "searchUrl": "http://localhost:3000/iiif/services",
+                "collectionName": "hk",
+                "name": "G_339",
+                "query": "?q=G3390114.sch_0000",
+                "iiifImagesURL": "http://localhost:8080/iiif/images",
+                "manifestPath": "G_339",
+                "collection": "hk",
+                "isLast": false
+            },
+            "width": 1500,
+            "height": 2500,
+            "thumbnailWidth": 300,
+            "thumbnailHeight": 500,
+            "annotationLists": [
+                {
+                    "annotations": [
+                        {
+                            "label": "Filename:",
+                            "html": "G3390114.sch_00035_00036_a",
+                            "isLast": true
+                        }
+                    ],
+                    "isLast": true
+                }
+            ]
+        }
+    ],
+    "description": "Zettel im Hauptkatalog",
+    "license": "https://creativecommons.org/CC-BY-SA",
+    "attribution": "Provided by ACDH VaWaDiÖ",
+    "label": "Label for G_339"
+}

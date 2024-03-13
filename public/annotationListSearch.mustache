@@ -1,0 +1,16 @@
+{
+  "@context": [
+    "http://iiif.io/api/presentation/2/context.json",
+    "http://iiif.io/api/search/1/context.json"
+  ],
+  "@id": "{{&searchUrl}}/{{&collectionName}}-{{&name}}/search{{&query}}",
+  "@type": "sc:AnnotationList",
+  "within": {
+    "@type": "sc:Layer",
+    "total": 0,
+    "ignored": ["user", "motivation", "date"]
+  },
+
+  "resources": [{{#annotations}}{{> annotation}}{{^isLast}},{{/isLast}}{{/annotations}}
+  ]
+}

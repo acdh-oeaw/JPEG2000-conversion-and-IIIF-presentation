@@ -1,0 +1,8 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "{{&url}}/{{&collectionName}}/list/{{&path}}",
+  "@type": "sc:AnnotationList",
+
+  "resources": [{{#annotations}}{{> annotation}}{{^isLast}},{{/isLast}}{{/annotations}}
+  ]
+}

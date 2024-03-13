@@ -1,0 +1,36 @@
+{
+    "url": "https://dboehk.hephaistos.arz.oeaw.ac.at/iiif/presentation",
+    "iiifImagesURL": "https://dboehk.hephaistos.arz.oeaw.ac.at/iiif/images",
+    "collection": "hkexample",
+    "manifestPath": "G_302",
+    "label": "Hauptkatalog paper slips drawer G_302",
+    "description": "Mockup manifest for the Hauptkatalog paperslips of WBÖ drawer G_302.",
+    "license": "https://creativecommons.org/CC-BY-SA",
+    "attribution": "Provided by ÖAW ACDH VaWaDiÖ",
+    "metadata": "    \"metadata\": [\r\n      {\"label\": \"Author\", \"value\": \"ACDH VaWaDiÖ\"},\r\n      {\"label\": \"Published\", \"value\": \"Vienna, 2019\"}\r\n    ],\r\n    \"navDate\": \"2019-01-01T00:00:00Z\",",
+    "width": 2500,
+    "height": 1500,
+    "thumbnailWidth": 500,
+    "thumbnailHeight": 300,
+    "sequences": [{
+        "path": "G_302",
+        "metadata": "  \"label\": \"Drawer G 302\",\r\n",
+        "canvases": [
+            {
+                "path": "g3020127.pir_00000_00001_a",
+                "imageName": "g3020127.pir_00000_00001_a",
+                "imagePath": "G_302/g3020127.pir/g3020127.pir_00000_00001_a.jp2",
+                "image": {},
+                "isLast": false
+            },
+            {
+                "path": "g3020127.pir_00001_00002_a",
+                "imageName": "g3020127.pir_00001_00002_a",
+                "imagePath": "G_302/g3020127.pir/g3020127.pir_00001_00002_a.jp2",
+                "image": {},
+                "isLast": true
+            }
+        ],
+        "isLast": true
+    }]
+}

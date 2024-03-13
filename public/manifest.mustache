@@ -1,0 +1,33 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@type": "sc:Manifest",
+    "@id": "{{&url}}/{{&collectionName}}-{{&manifestPath}}/manifest",
+    
+    "label": "{{label}}",
+    "description": "{{description}}",
+    "license": "{{&license}}{{^license}}No licensing provided! Please contact the resource owner!{{/license}}",
+    "attribution": "{{attribution}}",
+    {{&metadata}}
+    "within": "{{&url}}/collection/{{&collectionName}}",
+    
+    "service": [
+	 	{
+	 	 	"@context":"http://iiif.io/api/search/0/context.json",
+	 	 	"@id":"{{&searchUrl}}/{{&collectionName}}-{{&manifestPath}}/search",
+	 	 	"profile":"http://iiif.io/api/search/0/search",
+	 	 	"label":"Nach Dateiname suchen:",
+	 	 	"service":
+	 	 	{
+	 	 	 	"@id":"{{&searchUrl}}/{{&collectionName}}-{{&manifestPath}}/autocomplete",
+	 	 	 	"profile":"http://iiif.io/api/search/0/autocomplete",
+	 	 	 	"label":"Get suggested words in this item"
+	 	 	}
+	 	}
+    ],
+    "sequences": [
+        {{#sequences}}{{> sequence}}{{^isLast}},{{/isLast}}{{/sequences}}
+    ],
+    "structures": [
+        {{#ranges}}{{> range}}{{^isLast}},{{/isLast}}{{/ranges}}
+    ]
+  }

@@ -1,0 +1,101 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@type": "sc:Manifest",
+  "@id": "https://dboehk.hephaistos.arz.oeaw.ac.at/iiif/presentation/hkexample-G_302/manifest",
+  "label": "Hauptkatalog paper slips drawer G_302",
+  "description": "Mockup manifest for the Hauptkatalog paperslips of WBÖ drawer G_302.",
+  "license": "https://creativecommons.org/CC-BY-SA",
+  "attribution": "Provided by ÖAW ACDH VaWaDiÖ",
+  "metadata": [
+    {
+      "label": "Author",
+      "value": "ACDH VaWaDiÖ"
+    },
+    {
+      "label": "Published",
+      "value": "Vienna, 2019"
+    }
+  ],
+  "navDate": "2019-01-01T00:00:00Z",
+  "within": "https://dboehk.hephaistos.arz.oeaw.ac.at/iiif/presentation/collection/hkexample",
+  "sequences": [
+    {
+      "@context": "http://iiif.io/api/presentation/2/context.json",
+      "@id": "https://dboehk.hephaistos.arz.oeaw.ac.at/iiif/presentation/hkexample/sequence/G_302",
+      "@type": "sc:Sequence",
+      "label": "Drawer G 302",
+      "canvases": [
+        {
+          "@context": "http://iiif.io/api/presentation/2/context.json",
+          "@id": "https://dboehk.hephaistos.arz.oeaw.ac.at/iiif/presentation/hkexample/canvas/g3020127.pir_00000_00001_a",
+          "@type": "sc:Canvas",
+          "label": "g3020127.pir_00000_00001_a",
+          "height": 1000,
+          "width": 750,
+          "thumbnail": {
+            "@id": "https://dboehk.hephaistos.arz.oeaw.ac.at/iiif/images/G_302/g3020127.pir/g3020127.pir_00000_00001_a.jp2/full/!500,300/0/default.jpg",
+            "@type": "dctypes:Image",
+            "height": 300,
+            "width": 500
+          },
+          "images": [
+            {
+              "@context": "http://iiif.io/api/presentation/2/context.json",
+              "@id": "https://dboehk.hephaistos.arz.oeaw.ac.at/iiif/presentation/hkexample/annotation/g3020127.pir_00000_00001_a",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://dboehk.hephaistos.arz.oeaw.ac.at/iiif/images/G_302/g3020127.pir/g3020127.pir_00000_00001_a.jp2/full/!2500,1500/0/default.jpg",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://dboehk.hephaistos.arz.oeaw.ac.at/iiif/images/G_302/g3020127.pir/g3020127.pir_00000_00001_a.jp2",
+                  "profile": "http://iiif.io/api/image/2/level1.json"
+                },
+                "height": 1500,
+                "width": 2500
+              },
+              "on": "https://dboehk.hephaistos.arz.oeaw.ac.at/iiif/presentation/G_302/canvas/g3020127.pir_00000_00001_a"
+            }
+          ]
+        },
+        {
+          "@context": "http://iiif.io/api/presentation/2/context.json",
+          "@id": "https://dboehk.hephaistos.arz.oeaw.ac.at/iiif/presentation/hkexample/canvas/g3020127.pir_00001_00002_a",
+          "@type": "sc:Canvas",
+          "label": "g3020127.pir_00001_00002_a",
+          "height": 1000,
+          "width": 750,
+          "thumbnail": {
+            "@id": "https://dboehk.hephaistos.arz.oeaw.ac.at/iiif/images/G_302/g3020127.pir/g3020127.pir_00001_00002_a.jp2/full/!500,300/0/default.jpg",
+            "@type": "dctypes:Image",
+            "height": 300,
+            "width": 500
+          },
+          "images": [
+            {
+              "@context": "http://iiif.io/api/presentation/2/context.json",
+              "@id": "https://dboehk.hephaistos.arz.oeaw.ac.at/iiif/presentation/hkexample/annotation/g3020127.pir_00001_00002_a",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://dboehk.hephaistos.arz.oeaw.ac.at/iiif/images/G_302/g3020127.pir/g3020127.pir_00001_00002_a.jp2/full/!2500,1500/0/default.jpg",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://dboehk.hephaistos.arz.oeaw.ac.at/iiif/images/G_302/g3020127.pir/g3020127.pir_00001_00002_a.jp2",
+                  "profile": "http://iiif.io/api/image/2/level1.json"
+                },
+                "height": 1500,
+                "width": 2500
+              },
+              "on": "https://dboehk.hephaistos.arz.oeaw.ac.at/iiif/presentation/G_302/canvas/g3020127.pir_00001_00002_a"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

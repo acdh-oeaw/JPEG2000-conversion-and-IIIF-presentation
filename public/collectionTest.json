@@ -1,0 +1,17 @@
+{
+    "url": "https://dboehk.hephaistos.arz.oeaw.ac.at/iiif/presentation",
+    "collection": "hkexample",
+    "label": "Hauptkatalog paper slips",
+    "description": "Mockup manifest for the Hauptkatalog paperslips of WBÖ.",
+    "license": "https://creativecommons.org/CC-BY-SA",
+    "attribution": "Provided by ÖAW ACDH VaWaDiÖ",
+    "manifests": [{
+        "manifestPath": "hkexample-G_302",
+        "label": "Hauptkatalog paper slips for drawer G_302"
+    },
+    {
+        "manifestPath": "hkexample-G_303",
+        "label": "Hauptkatalog paper slips for drawer G_303",
+        "isLast": true
+    }]
+}

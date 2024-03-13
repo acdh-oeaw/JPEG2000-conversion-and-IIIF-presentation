@@ -1,0 +1,78 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [       
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch and Monitor Program",
+            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/nodemon",
+            "runtimeArgs": [
+                "--ext", "js,json"
+            ],
+            "program": "${workspaceFolder}/server.js",
+            "restart": true,
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "env": {
+                "DEBUG": "serve-index server-static",
+//                "MEMCACHED_SERVERS": "127.0.0.1",
+                "IMAGE_DATA_PATH": "Q:\\Schubertonline\\601_imgs_raster\\in",
+                "IIIF_DATA_PATH": "Q:\\Schubertonline\\601_imgs_raster\\jp2k",
+                "ROOT_DATA_PATH": "Q:\\hkimageserver\\htdocs",
+                "IMAGE_MD5_CHECKSUMS_PATH": "Q:\\Schubertonline\\601_imgs_raster\\in\\md5",
+                "XNO_VALIDATION_AT_STARTUP": "true",
+                "DEFAULT_COLLECTION": "default"
+            }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/server.js",
+            "env": {
+                "DEBUG": "serve-index server-static",
+                "IMAGE_DATA_PATH": "/home/vagrant/image-data"
+            }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch image-processing",
+            "program": "${workspaceFolder}/process-images.js",
+            "runtimeArgs": ["--trace-warnings"],
+            "outputCapture": "std",
+            "args": ["/windows/V/tiffs\\G_339\\G3390114.sch", "V:\forIIIF\\G_339\\G3390114.sch"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Mustache test presentation",
+            "program": "${workspaceFolder}/node_modules/mustache/bin/mustache",
+            "outputCapture": "std",
+            //..\node_modules\.bin\mustache manifestTest.json manifest.mustache -p sequence.mustache -p sequenceRef.mustache -p canvas.mustache -p canvasRef.mustache -p image.mustache manifestTestOut.json
+            //..\node_modules\.bin\mustache collectionTest.json collection.mustache -p manifestRef.mustache collectionTestOut.json
+            "args": ["public/manifestTest.json", "public/manifest.mustache",
+                "-p", "public/sequence.mustache",
+                "-p", "public/sequenceRef.mustache",
+                "-p", "public/canvas.mustache",
+                "-p", "public/canvasRef.mustache",
+                "-p", "public/image.mustache",
+                "public/manifestTestOut.json"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Mustache test search",
+            "program": "${workspaceFolder}/node_modules/mustache/bin/mustache",
+            "outputCapture": "std",
+            //..\node_modules\.bin\mustache manifestTest.json manifest.mustache -p sequence.mustache -p sequenceRef.mustache -p canvas.mustache -p canvasRef.mustache -p image.mustache manifestTestOut.json
+            //..\node_modules\.bin\mustache collectionTest.json collection.mustache -p manifestRef.mustache collectionTestOut.json
+            "args": ["public/manifestTestSearch.json", "public/annotationListSearch.mustache",
+                "-p", "public/annotation.mustache",
+                "public/manifestTestOutSearch.json"]
+        }
+    ]
+}

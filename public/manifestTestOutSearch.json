@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "http://iiif.io/api/presentation/2/context.json",
+    "http://iiif.io/api/search/1/context.json"
+  ],
+  "@id": "http://localhost:3000/iiif/search/hk-G_339/search?q=G3390120.sch_VZ_0000",
+  "@type": "sc:AnnotationList",
+  "within": {
+    "@type": "sc:Layer",
+    "total": 0,
+    "ignored": ["user", "motivation", "date"]
+  },
+
+  "resources": [{
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "resource":{
+    "@id": "http://localhost:3000/iiif/presentation/hk/filename-annotation/xyz",
+    "@type": "dctypes:Text",
+    "label": "filename",
+    "format": "text/plain",
+    "chars":"G3390120.sch_VZ_00000_00001_a.tif"
+  },
+  "on": "http://localhost:3000/iiif/presentation/hk/canvas/xyz"
+},{
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "resource":{
+    "@id": "http://localhost:3000/iiif/presentation/hk/filename-annotation/xyz2",
+    "@type": "dctypes:Text",
+    "label": "filename",
+    "format": "text/plain",
+    "chars":""
+  },
+  "on": "http://localhost:3000/iiif/presentation/hk/canvas/xyz2"
+}
+  ]
+}

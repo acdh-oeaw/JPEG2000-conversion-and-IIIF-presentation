@@ -1,0 +1,13 @@
+{
+  "@context": "http://iiif.io/api/search/1/context.json",
+  "@id": "{{&searchUrl}}/{{&collectionName}}-{{&name}}/autocomplete{{&query}}",
+  "@type": "search:TermList",
+  "ignored": ["user", "motivation", "date", "min"],
+  "terms": [{{#terms}}
+    {
+      "match": "{{&match}}",
+      "url": "{{&searchUrl}}/{{&collectionName}}-{{&name}}/search{{&query}}",
+      "count": {{&count}}
+    }{{^isLast}},{{/isLast}}{{/terms}}
+    ]
+}

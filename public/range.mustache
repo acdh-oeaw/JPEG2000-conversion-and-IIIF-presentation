@@ -1,0 +1,13 @@
+{
+  "@id": "{{&url}}/{{&collectionName}}/range/{{&path}}",
+  "@type": "sc:Range",
+  "label": "{{label}}",
+  "viewingHint": "{{viewingHint}}",
+  "ranges": [
+    {{#rangeURLs}}"{{&url}}/{{&collectionName}}/range/{{&path}}"{{^isLast}},{{/isLast}}{{/rangeURLs}}      
+  ],
+  "canvases": [
+    {{#canvasURLs}}"{{&url}}/{{&collectionName}}/canvas/{{&path}}"{{^isLast}},{{/isLast}}{{/canvasURLs}}
+  ]{{#within}},
+  "within":"{{&url}}/{{&collectionName}}/range/{{&path}}"{{/within}}
+}

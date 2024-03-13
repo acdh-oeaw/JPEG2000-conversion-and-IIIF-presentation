@@ -1,0 +1,19 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "{{&url}}/{{&collectionName}}/annotation/{{&path}}",
+  "@type": "oa:Annotation",
+  "motivation": "sc:painting",
+  "resource": {
+    "@id": "{{&iiifImagesURL}}/{{&imagePath}}/full/!{{width}},{{height}}/0/default.jpg",
+    "@type": "dctypes:Image",
+    "format": "image/jpeg",
+    "service": {
+      "@context": "http://iiif.io/api/image/2/context.json",
+      "@id": "{{&iiifImagesURL}}/{{&imagePath}}",
+      "profile": "http://iiif.io/api/image/2/level1.json"
+    },
+    "height":{{height}},
+    "width":{{width}}
+  },
+  "on": "{{&url}}/{{&manifestPath}}/canvas/{{&path}}"
+}

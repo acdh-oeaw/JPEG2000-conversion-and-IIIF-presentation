@@ -1,0 +1,13 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "{{&url}}/collection/{{&collection}}",
+  "@type": "sc:Collection",
+  "label": "{{label}}",
+  "viewingHint": "top",
+  "description": "{{description}}",
+  "license": "{{&license}}{{^license}}No licensing provided! Please contact the resource owner!{{/license}}",
+  "attribution": "{{attribution}}",
+
+  "members": [{{#manifests}}{{> manifestRef}}{{^isLast}},{{/isLast}}{{/manifests}}],
+  "manifests": [{{#manifests}}{{> manifestRef}}{{^isLast}},{{/isLast}}{{/manifests}}]
+}

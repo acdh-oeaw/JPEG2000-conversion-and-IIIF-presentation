@@ -1,0 +1,19 @@
+{
+    "searchUrl": "http://localhost:3000/iiif/search",
+    "url": "http://localhost:3000/iiif/presentation",
+    "collectionName": "hk",    
+    "collection": "hk",
+    "name": "G_339",
+    "query": "?q=G3390120.sch_VZ_0000",
+    "annotations": [
+        {
+            "path": "xyz",
+            "filename": "G3390120.sch_VZ_00000_00001_a.tif"
+        },       
+        {
+            "path": "xyz2",
+            "fielname": "G3390120.sch_VZ_00001_00002_a.jp2",
+            "isLast": true
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "https://dboehk.hephaistos.arz.oeaw.ac.at/iiif/presentation/collection/hkexample",
+  "@type": "sc:Collection",
+  "label": "Hauptkatalog paper slips",
+  "viewingHint": "top",
+  "description": "Mockup manifest for the Hauptkatalog paperslips of WBÖ.",
+  "license": "https://creativecommons.org/CC-BY-SA",
+  "attribution": "Provided by ÖAW ACDH VaWaDiÖ",
+
+  "members": [
+{
+  "@id": "https://dboehk.hephaistos.arz.oeaw.ac.at/iiif/presentation/hkexample-G_302/manifest",
+  "@type": "sc:Manifest",
+  "label": "Hauptkatalog paper slips for drawer G_302"
+},
+{
+  "@id": "https://dboehk.hephaistos.arz.oeaw.ac.at/iiif/presentation/hkexample-G_303/manifest",
+  "@type": "sc:Manifest",
+  "label": "Hauptkatalog paper slips for drawer G_303"
+}],
+  "manifests": [
+{
+  "@id": "https://dboehk.hephaistos.arz.oeaw.ac.at/iiif/presentation/hkexample-G_302/manifest",
+  "@type": "sc:Manifest",
+  "label": "Hauptkatalog paper slips for drawer G_302"
+},
+{
+  "@id": "https://dboehk.hephaistos.arz.oeaw.ac.at/iiif/presentation/hkexample-G_303/manifest",
+  "@type": "sc:Manifest",
+  "label": "Hauptkatalog paper slips for drawer G_303"
+}]
+}

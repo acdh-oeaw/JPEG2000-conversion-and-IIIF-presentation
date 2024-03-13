@@ -1,0 +1,11 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "{{&url}}/{{&collectionName}}/sequence/{{&path}}",
+  "@type": "sc:Sequence",
+  
+  {{&metadata}}
+
+  "canvases": [
+      {{#canvases}}{{> canvas}}{{^isLast}},{{/isLast}}{{/canvases}}
+  ]
+}
