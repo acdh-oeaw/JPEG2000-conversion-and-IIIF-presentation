@@ -1,6 +1,6 @@
 FROM ghcr.io/acdh-oeaw/iipsrv/iipsrv as builder
 
-FROM node:18-alpine3.19
+FROM node:18-alpine3.20
 
 RUN echo '@edgemain http://dl-4.alpinelinux.org/alpine/edge/main' >> /etc/apk/repositories &&\
     echo '@edgecommunity http://dl-4.alpinelinux.org/alpine/edge/community' >> /etc/apk/repositories &&\
