@@ -4,13 +4,12 @@ const readFile = util.promisify(fs.readFile);
 const qs = require('qs');
 const mustache = require('mustache')
 const _ = require("lodash")
-const compression = require('compression')
 
 const { createSequenceData, manifestMetadata } = require('./iiif-presentation')
 
 module.exports = function(service) {
-    service.get('/iiif/services/:collectionName-name/search', compression(), (req, res) => { respond(req, res, 'search') })
-    service.get('/iiif/services/:collectionName-name/autocomplete', compression(), (req, res) => { respond(req, res, 'autocomplete') })
+    service.get('/iiif/services/:collectionName-name/search', (req, res) => { respond(req, res, 'search') })
+    service.get('/iiif/services/:collectionName-name/autocomplete', (req, res) => { respond(req, res, 'autocomplete') })
 }
 async function initModule() {
     annotationListSearch = await readFile('public/annotationListSearch.mustache', 'utf8'),

@@ -5,17 +5,16 @@ const readDir = util.promisify(fs.readdir)
 const path = require('path');
 const mustache = require('mustache')
 const _ = require("lodash")
-const compression = require('compression')
 
 module.exports = function(service) {
-    service.get('/iiif/presentation/collection/:collectionName', compression(), (req, res) => { respond(req, res, 'collection') })
-    service.get('/iiif/presentation/:collectionName-name/manifest', compression(), (req, res) => { respond(req, res, 'manifest') })
-    service.get('/iiif/presentation/:collectionName/sequence/:name', compression(), (req, res) => { respond(req, res, 'sequence') })
-    service.get('/iiif/presentation/:collectionName-name/canvas/:name', compression(), (req, res) => { respond(req, res, 'canvas') })
-    service.get('/iiif/presentation/:collectionName/annotation/:name', compression(), (req, res) => { respond(req, res, 'image') })
-    service.get('/iiif/presentation/:collectionName/html-annotation/:name', compression(), (req, res) => { respond(req, res, 'html-annotation') })
-    service.get('/iiif/presentation/:collectionName/res/:name', compression(), (req, res) => { respond(req, res, 'imageRes') })
-    service.get('/iiif/presentation/:collectionName/list/:name', compression(), (req, res) => { respond(req, res, 'annotationList') })
+    service.get('/iiif/presentation/collection/:collectionName', (req, res) => { respond(req, res, 'collection') })
+    service.get('/iiif/presentation/:collectionName-name/manifest', (req, res) => { respond(req, res, 'manifest') })
+    service.get('/iiif/presentation/:collectionName/sequence/:name', (req, res) => { respond(req, res, 'sequence') })
+    service.get('/iiif/presentation/:collectionName-name/canvas/:name', (req, res) => { respond(req, res, 'canvas') })
+    service.get('/iiif/presentation/:collectionName/annotation/:name', (req, res) => { respond(req, res, 'image') })
+    service.get('/iiif/presentation/:collectionName/html-annotation/:name', (req, res) => { respond(req, res, 'html-annotation') })
+    service.get('/iiif/presentation/:collectionName/res/:name', (req, res) => { respond(req, res, 'imageRes') })
+    service.get('/iiif/presentation/:collectionName/list/:name', (req, res) => { respond(req, res, 'annotationList') })
 }
 
 const servedExt = ".jp2"
