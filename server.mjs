@@ -235,23 +235,26 @@ fs.watch(process.env.IMAGE_MD5_CHECKSUMS_PATH, (eventType, filename) => {
 
 fs.readdir(process.env.IMAGE_MD5_CHECKSUMS_PATH, updateMD5Checksums);
 
-// http://localhost:3000/memcached?set[1][key]=test&set[1][value]=testing&set[2][key]=test2&set[2][value]=testing
-// http://localhost:3000/memcached?get[1]=test&get[2]=test2
-// http://localhost:3000/memcached?del[1]=test&del[2]=test2
+// http://localhost:3000/memcached?set[key]=test&set[value]=x
+// http://localhost:3000/memcached?get=test => x
+// http://localhost:3000/memcached?get[]=test => test: x
+// Set many values at once (but not arrays of values):
+// http://localhost:3000/memcached?set[0][key]=test&set[0][value]=testing&set[1][key]=test2&set[1][value]=testing
+// http://localhost:3000/memcached?get[]=test&get[]=test2
+// http://localhost:3000/memcached?del=test&del=test2
 service.get('/memcached', async (req, res) => {
-  res.setHeader('Content-Type', 'application/json');      
+  res.setHeader('Content-Type', 'application/json');
+  try {      
   if (undefined !== req.query.set) {
     if (Array.isArray(req.query.set)) {
       var setters = [];
       for (let pair of req.query.set) {
-        var key_value = Object.entries(pair)[0]
-        setters.push(memcacheClient.set(...key_value))
+        await setters.push(memcacheClient.set(pair.key, pair.value))
       }
-      await Promise.all(setters)
-      res.send('All set: ' + JSON.stringify(req.query.set))
+      res.send('{"All set": ' + JSON.stringify(req.query.set)+'}')
     } else {
       await memcacheClient.set(req.query.set.key, req.query.set.value)
-      res.send('Set: ' + JSON.stringify(req.query.set)) 
+      res.send('{"Set": ' + JSON.stringify(req.query.set)+'}') 
     }
   }
   else if (undefined !== req.query.get) {
@@ -260,7 +263,7 @@ service.get('/memcached', async (req, res) => {
       res.send(JSON.stringify(values))
     }
     else {
-      const value = memcacheClient.get(req.query.get)
+      const value = await memcacheClient.get(req.query.get)
       res.send(JSON.stringify(value))
     }
   }
@@ -268,13 +271,12 @@ service.get('/memcached', async (req, res) => {
     if (Array.isArray(req.query.del)) {
       var deleters = [];
       for (var name of req.query.del)
-        deleters.push(memcacheClient.delete(name))
-      await Promise.all(deleters)
-      res.send('All deleted: ' + JSON.stringify(req.query.del))
+        await deleters.push(memcacheClient.delete(name))
+      res.send('{"All deleted": ' + JSON.stringify(req.query.del)+'}')
     }
     else {
       const value = await memcacheClient.delete(req.query.del)
-      res.send('Deleted ' + req.query.del)
+      res.send('{"Deleted": ' + req.query.del+'}')
     }
   }
   else {
@@ -283,6 +285,9 @@ service.get('/memcached', async (req, res) => {
       values.IMAGE_MD5_CHECKSUMS_FILES = filesValues
       res.send(JSON.stringify(values)) 
     }
+  } catch (err) {
+    res.send(JSON.stringify(err.toString()), 400)
+  }
 })
 
 // Serve directory indexes for images/tiff folder (with icons)
