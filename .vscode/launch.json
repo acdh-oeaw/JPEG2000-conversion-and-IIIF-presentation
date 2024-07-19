@@ -10,7 +10,7 @@
             "name": "Launch and Monitor Program",
             "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/nodemon",
             "runtimeArgs": [
-                "--ext", "js,json"
+                "--ext", "js,mjs,json"
             ],
             "program": "${workspaceFolder}/server.mjs",
             "restart": true,
@@ -18,11 +18,11 @@
             "internalConsoleOptions": "neverOpen",
             "env": {
                 "DEBUG": "serve-index server-static",
-//                "MEMCACHED_SERVERS": "127.0.0.1",
-                "IMAGE_DATA_PATH": "Q:\\Schubertonline\\601_imgs_raster\\in",
-                "IIIF_DATA_PATH": "Q:\\Schubertonline\\601_imgs_raster\\jp2k",
-                "ROOT_DATA_PATH": "Q:\\hkimageserver\\htdocs",
-                "IMAGE_MD5_CHECKSUMS_PATH": "Q:\\Schubertonline\\601_imgs_raster\\in\\md5",
+                "MEMCACHED_SERVERS": "127.0.0.1",
+                "IMAGE_DATA_PATH": "${env:HOME}/WebProjects/image-data/upload",
+                "IIIF_DATA_PATH": "${env:HOME}/WebProjects/image-data/forIIIF",
+                "ROOT_DATA_PATH": "${env:HOME}/WebProjects/image-data",
+                "IMAGE_MD5_CHECKSUMS_PATH": "${env:HOME}/WebProjects/image-data/upload",
                 "XNO_VALIDATION_AT_STARTUP": "true",
                 "DEFAULT_COLLECTION": "default"
             }
