@@ -1,7 +1,7 @@
 const nodemon = require('nodemon')
 
 nodemon({
-    script: __dirname+"/server.js",
-    ext: "js json",
+    script: __dirname+"/server.mjs",
+    ext: "js mjs json",
     verbose: "true"
 })

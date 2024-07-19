@@ -12,7 +12,7 @@
             "runtimeArgs": [
                 "--ext", "js,json"
             ],
-            "program": "${workspaceFolder}/server.js",
+            "program": "${workspaceFolder}/server.mjs",
             "restart": true,
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen",
@@ -31,7 +31,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/server.js",
+            "program": "${workspaceFolder}/server.mjs",
             "env": {
                 "DEBUG": "serve-index server-static",
                 "IMAGE_DATA_PATH": "/home/vagrant/image-data"
