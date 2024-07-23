@@ -182,7 +182,6 @@ fs.watch(process.env.IMAGE_MD5_CHECKSUMS_PATH, (eventType, filename) => {
     console.log('MD5: ' + eventType + ': ' + filename)
     try {
       const md5FullFileName = path.join(process.env.IMAGE_MD5_CHECKSUMS_PATH, filename)
-      relativeCSumPath = path.relative(process.env.IMAGE_DATA_PATH, process.env.IMAGE_MD5_CHECKSUMS_PATH)
       fs.accessSync(md5FullFileName)
       const logFileStream = fs.createWriteStream(path.join(process.env.IMAGE_MD5_CHECKSUMS_PATH, filename.replace('.md5', '-conversion.log')))
       logFileStream.write = util.promisify(logFileStream.write)
