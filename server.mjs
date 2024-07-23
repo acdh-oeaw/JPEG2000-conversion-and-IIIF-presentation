@@ -1,16 +1,30 @@
-const service = require('restana')({})
-const connectQuery = require('connect-query')
-const cors = require('cors')
-const finalhandler = require('finalhandler')
-const serveIndex = require('serve-index')
-const serveStatic = require('serve-static')
+import restana from 'restana'
+import { useCompressionStream } from 'h3-compression'
+import connectQuery from 'connect-query'
+import cors from 'cors'
+import finalhandler from 'finalhandler'
+import serveIndex from 'serve-index'
+import serveStatic from 'serve-static'
+import bodyParser from 'body-parser'
+import memcachePlus from 'memcache-plus'
+import { fileURLToPath } from 'url' 
+import fs from 'fs'
+import path from 'path'
+import mustache from 'mustache'
+import util from 'util'
+import md5sum from './md5sum.js'
+import indexHelpers from './serve-index-parts.js'
+import { imageProcessor, processImageFile, setAfterImageFileProcessing, getImageFilesProcessed, validInFileExts } from './image-processing.js'
+import iiif_presentation from './iiif-presentation.js'
+import iiif_search from './iiif-search.js'
+
+const service = restana({onBeforeResponse: useCompressionStream})
+let requestHost = 'https://localhost:3000'
+
 serveStatic.mime.define({
   'text/plain': ['md5']
 })
-const compression = require('compression')
-const bodyParser = require('body-parser')
 service.use(bodyParser.urlencoded({ extended: false }))
-service.use(compression())
 service.use(cors({
   origin: '*',
   methods: ['GET', 'POST', 'PUT'],
@@ -19,7 +33,6 @@ service.use(cors({
   optionsSuccessStatus: 200
 }))
 service.options('*', cors())
-const memcachePlus = require('memcache-plus')
 const memcacheClient = new memcachePlus({
   hosts: (process.env.MEMCACHED_SERVERS||"").split(','),
   disabled: process.env.MEMCACHED_SERVERS === undefined,
@@ -27,19 +40,12 @@ const memcacheClient = new memcachePlus({
     process.env.MEMCACHED_SERVERS !== undefined ? console.error(`Error connecting to memcached:
 ${err.toString()}`) || true : true
 })
-const fs = require('fs')
-const path = require('path')
-const mustache = require('mustache')
-const util = require('util')
-const md5sum = require('./md5sum')
 const md5sumValidate = util.promisify(md5sum.validate)
-const indexHelpers = require('./serve-index-parts')
-const { imageProcessor, processImageFile, setAfterImageFileProcessing, getImageFilesProcessed, validInFileExts } = require('./image-processing')
 
 service.use(cors());
-require('./iiif-presentation')(service)
+iiif_presentation(service)
 service.use(connectQuery());
-require('./iiif-search')(service)
+iiif_search(service)
 
 function updateMD5Checksums(err, items) {
   var md5sums = [];
@@ -228,53 +234,60 @@ fs.watch(process.env.IMAGE_MD5_CHECKSUMS_PATH, (eventType, filename) => {
 
 fs.readdir(process.env.IMAGE_MD5_CHECKSUMS_PATH, updateMD5Checksums);
 
-// http://localhost:3000/memcached?set[1][key]=test&set[1][value]=testing&set[2][key]=test2&set[2][value]=testing
-// http://localhost:3000/memcached?get[1]=test&get[2]=test2
-// http://localhost:3000/memcached?del[1]=test&del[2]=test2
-service.get('/memcached', (req, res) => {
-  res.setHeader('Content-Type', 'application/json');      
+// http://localhost:3000/memcached?set[key]=test&set[value]=x
+// http://localhost:3000/memcached?get=test => x
+// http://localhost:3000/memcached?get[]=test => test: x
+// Set many values at once (but not arrays of values):
+// http://localhost:3000/memcached?set[0][key]=test&set[0][value]=testing&set[1][key]=test2&set[1][value]=testing
+// http://localhost:3000/memcached?get[]=test&get[]=test2
+// http://localhost:3000/memcached?del=test&del=test2
+service.get('/memcached', async (req, res) => {
+  res.setHeader('Content-Type', 'application/json');
+  try {      
   if (undefined !== req.query.set) {
     if (Array.isArray(req.query.set)) {
       var setters = [];
       for (let pair of req.query.set) {
-        var key_value = Object.entries(pair)[0]
-        setters.push(memcacheClient.set(...key_value))
+        await setters.push(memcacheClient.set(pair.key, pair.value))
       }
-      Promise.all(setters)
-        .then(() => { res.send('All set: ' + JSON.stringify(req.query.set)) })
-    } else memcacheClient.set(req.query.set.key, req.query.set.value)
-      .then(() => { res.send('Set: ' + JSON.stringify(req.query.set)) })
+      res.send('{"All set": ' + JSON.stringify(req.query.set)+'}')
+    } else {
+      await memcacheClient.set(req.query.set.key, req.query.set.value)
+      res.send('{"Set": ' + JSON.stringify(req.query.set)+'}') 
+    }
   }
   else if (undefined !== req.query.get) {
     if (Array.isArray(req.query.get)) {
-      memcacheClient.getMulti(req.query.get)
-        .then((values) => { res.send(JSON.stringify(values)) })
+      const values = await memcacheClient.getMulti(req.query.get)
+      res.send(JSON.stringify(values))
     }
-    else memcacheClient.get(req.query.get)
-      .then((value) => { res.send(JSON.stringify(value)) })
+    else {
+      const value = await memcacheClient.get(req.query.get)
+      res.send(JSON.stringify(value))
+    }
   }
   else if (undefined !== req.query.del) {
     if (Array.isArray(req.query.del)) {
       var deleters = [];
       for (var name of req.query.del)
-        deleters.push(memcacheClient.delete(name))
-      Promise.all(deleters)
-        .then(() => { res.send('All deleted: ' + JSON.stringify(req.query.del)) })
+        await deleters.push(memcacheClient.delete(name))
+      res.send('{"All deleted": ' + JSON.stringify(req.query.del)+'}')
     }
-    else memcacheClient.delete(req.query.del)
-      .then((value) => { res.send('Deleted ' + req.query.del) })
+    else {
+      const value = await memcacheClient.delete(req.query.del)
+      res.send('{"Deleted": ' + req.query.del+'}')
+    }
   }
-  else memcacheClient.getMulti(['isPicValidating', 'IMAGE_MD5_CHECKSUMS_FILES'])
-  .then((values) => {
-    return memcacheClient.getMulti(values.IMAGE_MD5_CHECKSUMS_FILES)
-    .then((filesValues) => {
+  else {
+    const values = await memcacheClient.getMulti(['isPicValidating', 'IMAGE_MD5_CHECKSUMS_FILES'])
+    const filesValues = values.IMAGE_MD5_CHECKSUMS_FILES ? await memcacheClient.getMulti(values.IMAGE_MD5_CHECKSUMS_FILES) : {}
       values.IMAGE_MD5_CHECKSUMS_FILES = filesValues
       res.send(JSON.stringify(values)) 
-    })
-  })
+    }
+  } catch (err) {
+    res.send(JSON.stringify(err.toString()), 400)
+  }
 })
-
-let requestHost = 'https://localhost:3000'
 
 // Serve directory indexes for images/tiff folder (with icons)
 function renderDirectory(template, locals, callback) {
@@ -341,6 +354,7 @@ function renderDirectory(template, locals, callback) {
   });
 };
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const index = serveIndex(process.env.IMAGE_DATA_PATH, {
   'icons': true,
   'template': (locals, callback) => {renderDirectory(path.join(__dirname, 'public/directory.html'), locals, callback)},
