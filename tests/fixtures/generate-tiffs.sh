@@ -14,8 +14,10 @@ do
   vips text "number_$i.v" "$i" --dpi 600 --font "$font"
   vips linear empty_image.v empty_white.v 1 255
   vips draw_mask empty_white.v "255 0 0" "number_$i.v" $((200 + ($i * 20 % 200))) $((200 + ($i * 10 % 100)))
-  vips copy empty_white.v "$prefix$i.$type"
+  vips colourspace empty_white.v empty_white-16.v rgb16
+  vips copy empty_white-16.v "$prefix$i.$type"
   rm "number_$i.v"
 done
 rm empty_white.v
+rm empty_white-16.v
 rm empty_image.v
