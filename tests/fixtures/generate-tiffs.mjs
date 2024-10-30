@@ -33,7 +33,7 @@ async function main() {
                 left: 200 + i * 20 % 200
             }])
             .linear([1, 1, 1], [255, 0, 0])
-            .toFile('test_' + i + '.tiff')
+            .toFile(import.meta.dirname + '/test_' + i + '.tiff')
     }
 }
 
