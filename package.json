@@ -4,8 +4,9 @@
   "description": "A server for all the data files for mirador",
   "main": "server.mjs",
   "scripts": {
-    "start": "node nodemon",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node nodemon.js",
+    "start": "node server.mjs",
+    "test": "concurrently --kill-others \"node nodemon.js\" \"vitest\""
   },
   "author": "Omar Siam",
   "license": "MIT",
@@ -16,6 +17,7 @@
   "dependencies": {
     "async": "^3.1.0",
     "body-parser": "^1.19.0",
+    "concurrently": "^9.0.1",
     "connect-query": "^1.0.0",
     "cors": "^2.8.5",
     "finalhandler": "^1.2.0",
@@ -27,7 +29,8 @@
     "qs": "^6.7.0",
     "restana": "^4.8.0",
     "serve-index": "^1.9.1",
-    "serve-static": "^1.14.1"
+    "serve-static": "^1.14.1",
+    "vitest": "^2.1.4"
   },
   "devDependencies": {
     "sharp": "^0.33.5"
